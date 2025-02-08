@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="John Leo B. Jariel">
+    <meta name="description" content="This is an Official Webpage of KUYA JEPOY - Bigasan">
+    <link rel="stylesheet" href="/CSS/products.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="icon" href="/Images/KJB.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>KUYA JEPOY - Bigasan</title>
+</head>
+
+<body oncontextmenu="return true">
+    <!--Navbar-->
+    <nav class="bar">
+        <div class="divbar">
+            <div class="logo">
+                <a href="index.html"><img src="/Images/KJB.png" title="HOMEPAGE" alt=""></a>
+            </div>
+            <ul class="navi">
+                <li><a href="/HTML/index.html" title="HOMEPAGE">HOMEPAGE</a></li>
+                <li class="active"><a id="active" href="/HTML/product.html" title="PRODUCT">PRODUCT</a></li>
+                <li><a href="/HTML/reviews.html" title="REVIEWS">REVIEWS</a></li>
+            </ul>
+            <ul class="smedia">
+                <li><a class="fb" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></a></i></li>
+            </ul>
+            <ul class="func">
+                <!--<li><a href="#" title="SEARCH"><img src="/SVG/search-svgrepo-com.svg" alt=""></a></li>-->
+                <li><a href="/HTML/join.html"  title="JOIN"><img src="/SVG/profile-svgrepo-com.svg" alt=""></a></li>
+                <li><a href="/HTML/cart.html" title="CART"><img src="/SVG/cart-svgrepo-com.svg" alt=""></a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+    
+    <header>
+        <div class="phead">
+            <div class="trapezoid">
+                <h1>Order Now!</h1>
+            </div>
+        </div>
+    </header>
+    
+    <section class="product">
+        <div class="product-container">
+            <div class="product-img">
+                <img src="/Products/p-product-1.png" alt="">
+            </div>
+            <div class="produc-descriptiion">
+                <div class="product-name">
+                    <h2>Malagkit (Glutinouse Rice)</h2>
+                </div>
+                <div class="product-price">
+                    <h3>&#8369;1,230.00</h3>
+                </div>
+                <div class="select-weight">
+                    <form action="" class="product-addtocart">
+                        <div class="weightqty">
+                            <div class="product-weight">
+                                <label for="order-option">Weight</label>
+                                <select class="order-selector" id="order-option">
+                                    <option value="25kg">25kg</option>
+                                </select>
+                            </div>
+                            <div class="product-qty">
+                                <label for="order-qty">Quantity</label>
+                                <input type="number" id="order-qty" value="1" min="1" max="10" pattern="[0-9]">
+                            </div>
+                        </div>
+                        <div class="order-submit">
+                            <button type="submit" name="add" id="addtocart" class="add-tocart">
+                                <span id="addtext">ADD TO CART</span>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="shrtpd">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est fuga dignissimos repudiandae eos doloribus accusamus fugit recusandae nesciunt eligendi ab. Dolorem nobis totam omnis autem excepturi culpa pariatur explicabo recusandae.</p>
+                        <br>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est fuga dignissimos repudiandae eos doloribus accusamus fugit recusandae nesciunt eligendi ab. Dolorem nobis totam omnis autem excepturi culpa pariatur explicabo recusandae.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sc3">
+        <div class="abt">
+            <div class="aboutus">
+                <h4>About Us</h4>
+            </div>
+            <div class="about">
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Refund Policy</a></li>
+            </div>
+        </div>
+    </section>
+
+    <footer class="ftrr">
+        <div class="ftr">
+            <div class="foothead">
+                <h2><span>&copy; </span><a href="">KUYA JEPOY - Bigasan</a><span> | 2025</span></h2>
+                <h3>Created by <a href="">WebLeo7</a></h3>
+            </div>
+            <div class="footpayment">
+                <li><img id="gcash" src="/SVG/GCash_logo.svg" alt="GCash_logo"></li>
+                <li><img id="paypal" src="/SVG/PayPal.svg" alt="PayPal"></li>
+                <li><img id="maya" src="/SVG/Maya_logo.svg" alt="Maya_logo"></li>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
+
+<script src="/JavaScript/dynamic.js"></script>

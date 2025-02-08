@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.phead {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Poppins", serif;
+}
+
+.trapezoid {
+    width: 400px;
+    padding: 15px;
+    background: rgb(26, 76, 1);
+    clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 15% 100%);
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+    font-size: 20px;
+}
+
+/*prdsec*/
+.search-product {
+    max-width: 1500px;
+    margin: auto;
+    padding: 3rem 5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.search-form input {
+    padding: 5px;
+    font-family: "Poppins", serif;
+    border: none;
+    background: none;
+    font-size: 18px;
+    text-align: center;
+}
+
+.search-form .search-bars {
+    width: 400px;
+    outline: none;
+    border-bottom: 2px solid green;
+}
+
+.search-form .sbmt-search {
+    background: green;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.pdtsec .pdtitle h2 {
+    font-family: "Poppins", serif;
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgb(26, 76, 1);
+}
+
+.pdtsec {
+    max-width: 1500px;
+    margin: auto;
+    padding: 3rem 5rem;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: "Poppins", serif;
+}
+
+.produc-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    align-items: center;
+    border-bottom: 2px solid green;
+    padding: 18px;
+    background-color: rgb(171, 236, 147);
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.286);
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+}
+
+.produc-card img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.product-name {
+    flex: 1;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.product-name:hover {
+    text-decoration: underline;
+}
+
+.produc-link {
+    color: inherit;
+}
+
+.produc-card::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    background: rgb(187, 203, 114);
+    transition: top 0.3s, left 0.3s;
+    transform: rotate(45deg);
+    z-index: 0;
+}
+
+.produc-card:hover::before {
+    left: 0;
+    top: 0;
+}
+
+.produc-card:hover {
+    transform: scale(1.009); /* Slight zoom effect */
+    z-index: 1; /* Ensure the card stays on top */
+}
+
+/* Ensure content is above the pseudo-element */
+.produc-card * {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 991px) {
+    .pdtsec {
+        max-width: 900px;
+        padding: 3rem 2rem;
+    }
+    .produc-card {
+        cursor: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .pdtsec {
+        max-width: 700px;
+        padding: 3rem 2rem;
+    }
+    .pdtsec .pdtitle h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 560px) {
+    .product-name {
+        flex: 1;
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .price {
+        font-size: 15px;
+    }
+    .search-form .search-bars {
+        width: 300px;
+        outline: none;
+        border-bottom: 2px solid green;
+    }
+    .produc-card {
+        padding: 10px;
+    }
+    .produc-card img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 494px) {
+    .produc-card {
+        gap: 1rem;
+    }
+}

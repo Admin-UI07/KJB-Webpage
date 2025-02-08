@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    max-height: fit-content;
+    z-index: 0;
+}
+
+.bar {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(to right, rgba(110, 86, 19, 0.95), rgba(17, 90, 0, 0.95)), url(divbar_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 2px 25px;
+    border-bottom: 3px solid black;
+}
+
+.divbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 100px;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.688));
+}
+
+.func img {
+    width: 35px;
+    filter: brightness(0) saturate(100%) invert(82%) sepia(87%) saturate(646%) hue-rotate(1deg) brightness(80%) contrast(101%)
+    drop-shadow(0 0 4px black);
+}
+
+.func img:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navi a {
+    font-size: 22px;
+    color: rgba(255, 255, 0, 0.879);
+    margin-right: 25px;
+    text-shadow: 0 0 6px rgb(0, 0, 0);
+    letter-spacing: 1.5;
+    border-radius: 15px;
+    transition: 0.2s;
+    padding: 8px;
+}
+
+.navi a:hover {
+    text-decoration: underline; 
+    font-size: 22.3px;
+}
+
+#active {
+    background-color: rgb(26, 76, 1);
+    padding: 8px 15px;
+}
+
+.smedia a{
+    font-size: 35px;
+    color: rgba(255, 255, 0, 0.879);;
+    margin-right: 15px;
+    text-shadow: 0 0 6px rgb(0, 0, 0);
+    
+}
+
+.smedia .fb {
+    font-size: 33.9px;
+}
+
+.smedia li:hover {
+    transition: 0.2s;
+    transform: scale(1.05);
+}
+
+.func a {
+    margin-left: 5px;
+}
+
+.hamburger {
+    display: none;
+}
+
+/*HEADER*/
+
+.heads {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.head {
+    max-width: 100%;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head img {
+    max-width: 100%;
+    border-bottom: 3px solid rgba(66, 101, 0, 0.71);
+}
+
+/*CONTENT*/
+.sc1 {
+    height: 600px;
+    background: rgb(180, 191, 180);
+    border-bottom: 3px solid rgba(66, 101, 0, 0.71);
+}
+
+.updates {
+    top: 51px;
+    position: relative;
+    width: 900px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 8px rgba(0, 0, 0, 0.1);
+}
+
+.updates img{
+    width: 900px;
+    display: none;
+}
+
+img.displaySlide {
+    display: block;
+}
+
+.updates button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 3px;
+    width: 50px;
+    margin: 0 15px;
+    cursor: pointer;
+    background: linear-gradient(to right, rgba(110, 86, 19, 0.95), rgba(17, 90, 0, 0.95));
+    color: rgb(255, 225, 0);
+    border-radius: 10px;
+    border: 1px solid  rgba(0, 0, 0, 0);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/*FPRODUCT*/
+
+.bg1 {
+    background: beige;
+}
+
+.fproduct {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    background: beige;
+}
+
+.fproduct .title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    background-color: rgba(85, 129, 4, 0.456);
+    border-radius: 10px;
+    padding: 1rem 0;
+    color: rgba(88, 78, 0, 0.92);
+}
+
+.fproduct .productc {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+    
+}
+
+.fproduct .product:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.fproduct .productc .product {
+    text-align: center;
+    background-color: rgba(85, 129, 4, 0.456);
+    padding: 1.5rem 1rem;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.fproduct .productc .product img {
+   height: 20.5rem;
+   margin-bottom: 25px;
+   border-radius: 15px;
+   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.588));
+}
+
+.fproduct .price {
+    text-align: justify;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.fproduct .price, h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(88, 78, 0, 0.92);
+}
+
+.fproduct h3 {
+    font-size: 25px;
+    margin-bottom: 3px;
+}
+
+.fproduct p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
+/*MISIONVISION*/
+.bg2 {
+    background: linear-gradient(to right, rgb(253, 253, 130), #7bff7b);
+    border-top: 3px solid rgba(85, 129, 4, 0.456);
+}
+
+.misvis {
+    max-width: 1100px;
+    margin: auto;
+    padding: 3rem 1rem;
+    display: flex;
+    text-align: center;
+    line-height: 30px;
+}
+
+.misvis .mission {
+    margin-right: 90px;
+}
+
+.misvis h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.misvis p {
+    font-size: 17px;
+    font-family: "Poppins", serif;
+}
+
+/*ABOUT US*/
+.sc3 {
+    border-top: 3px solid rgba(85, 129, 4, 0.456);
+    background-color: beige;
+    text-align: center;
+    padding: 3rem 2rem;
+    font-size: 25px;
+    line-height: 3rem;
+    font-family: "Poppins", serif;
+}
+
+.sc3 .about {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.sc3 h4 {
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: rgb(30, 144, 30);
+}
+
+.sc3 a {
+    color: rgb(30, 144, 30);
+    font-size: 23px;
+}
+
+.sc3 a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+/*QUOTATION*/
+.quotation {
+    max-width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.48), rgba(132, 255, 0, 0.356)), url(quote-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins", serif;
+    text-align: center;
+    padding: 5rem 3rem;
+}
+
+.quotation h1 {
+    font-size: 65px;
+    color: whitesmoke;
+    line-height: 50px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.502);
+}
+
+/*FOOTER*/
+
+.ftrr {
+    background-color: rgb(246, 244, 244);
+    border-top: 2px solid gray;
+}
+
+.ftr {
+    max-width: 1300px;
+    margin: auto;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foothead {
+    font-family: "Poppins", serif;
+    line-height: 25px;
+}
+
+.foothead h2 a {
+    color: rgb(67, 66, 66);
+}
+
+.foothead h2 span {
+    color: rgb(67, 66, 66);
+}
+
+.foothead h3, a{
+    color: rgb(67, 66, 66);
+}
+
+.foothead h2 a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.foothead h3 a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+#gcash {
+    width: 80px;
+}
+
+#paypal {
+    width: 71px;
+}
+
+#maya {
+    width: 64px;
+}
+
+.footpayment li{
+    margin-left: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.150);
+}
+
+@media (max-width: 1320px) {
+    .logo img {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .logo img {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 991px) {
+    /*NAVI*/
+    .logo img {
+        padding: 0 2px;
+        cursor: none;
+    }
+    .hamburger {
+        display: block;
+        cursor: none;
+    }
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background-color: rgba(255, 255, 0, 0.879);
+        margin: 6px 0;
+        box-shadow: 0 0 5px;
+    }
+    .navi {
+        font-family: "Poppins", serif;
+        font-weight: 600;
+        height: 0px;
+        position: absolute;
+        top: 109px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: rgb(59, 75, 59);
+        transition: 0.2s;
+        overflow: hidden;
+        z-index: 1000;
+    }
+    .navi.active {
+        height: 285.5px;
+    }
+    #active {
+        background: none;
+    }
+    .navi li.active {
+        background-color: rgb(42, 60, 42);
+    }
+    .navi li {
+        display: block;
+        padding: 10px;
+        border-bottom: 2px solid;
+    }
+    .navi a {
+        cursor: none;
+        display: block;
+        width: fit-content;
+        margin: 12px auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .navi.active a{
+        opacity: 1;
+    }
+    .func a {
+        cursor: none;
+    }
+    .sc1 {
+        height: 490px;
+    }
+    .updates {
+        width: 700px;
+    }
+    .updates img {
+        width: 700px;
+    }
+    .updates button {
+        padding: 2px;
+        width: 30px;
+        font-size: 20px;
+        cursor: none;
+        margin: 0 8px;
+    }
+    /*HEADER*/
+    .heads {
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+    }
+    
+    .head {
+        max-width: 100%;
+        overflow: hidden; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .head img {
+        max-width: 190%;
+        object-fit: contain; 
+    }
+    /*MAIN*/
+    .fproduct .productc .product {
+        cursor: none;
+    }
+    .fproduct .productc .product img {
+        height: 15.5rem;
+    }
+    .fproduct .productc h3 {
+        font-family: "Poppins", serif;
+        font-weight: 600;
+    }
+    .fproduct .productc .price, p {
+        font-family: "Poppins", serif;
+        font-weight: 500;
+    }
+    .misvis {
+        padding: 48px 32px;
+    }
+    .misvis .mission {
+        margin-right: 25px;
+    }
+    .smedia {
+        display: none;
+    }
+    /*ABOUT US*/
+    .sc3 {
+        text-align: left;
+    }
+    .sc3 .about {
+        display: grid;
+        gap: 0;
+        line-height: 35px;
+        justify-content: left;
+    }
+    /*FOOTER*/
+    .ftr {
+        display: grid;
+        gap: 2.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /*CONTENT*/
+    .navi {
+        top: 109px;
+    }
+    .fproduct .productc .product img {
+        margin-bottom: 10px;
+    }
+    .fproduct h3 {
+        font-size: 18px;
+        margin-bottom: -4px;
+    }
+    .fproduct .price {
+        font-size: 18px;
+        margin-bottom: 3px;
+    }
+    /*CONTENT*/
+    .sc1 {
+        height: 450px;
+    }
+    .updates {
+        width: 600px;
+    }
+    .updates img {
+        width: 600px;
+    }
+    .updates button {
+        padding: 2px;
+        width: 30px;
+        font-size: 20px;
+        cursor: none;
+        margin: 0 8px;
+    }
+    /*MissionVision*/
+    .misvis {
+        display: block;
+        padding: 30px;
+    }
+    .misvis .mission {
+        margin: 0;
+    }
+    .misvis h1 {
+        font-size: 40px;
+    }
+    .misvis p {
+        font-size: 15px;
+        line-height: 28px;
+    }
+    /*FOOTER*/
+    .foothead {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .foothead a {
+        cursor: none;
+    }
+}
+
+@media (max-width: 624px) {
+    .sc1 {
+        height: 385px;
+    }
+    .updates {
+        width: 500px;
+    }
+    .updates img {
+        width: 500px;
+    }
+}
+
+@media (max-width: 529.60px) {
+    .sc1 {
+        height: 300px;
+    }
+    .updates {
+        width: 350px;
+    }
+    .updates img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .navi {
+        top: 108px;
+    }
+}
